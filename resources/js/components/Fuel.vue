@@ -53,7 +53,7 @@
             </tbody>
         </table>
 
-        <nav aria-label="Page navigation example">
+        <nav>
             <ul class="pagination">
                 <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item"><a href="#" class="page-link" @click="fetchFuels(pagination.prev_page_url)">Previous</a></li>
 
@@ -126,7 +126,7 @@
             addFuel(){
                 if(this.edit === false){
                     //add
-                    fetch('api/fuel',{
+                    fetch('/api/fuel',{
                         method: 'post',
                         body: JSON.stringify(this.fuel),
                         headers:{

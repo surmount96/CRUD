@@ -1832,7 +1832,7 @@ __webpack_require__.r(__webpack_exports__);
 
       if (this.edit === false) {
         //add
-        fetch('api/fuel', {
+        fetch('/api/fuel', {
           method: 'post',
           body: JSON.stringify(this.fuel),
           headers: {
@@ -37346,7 +37346,7 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c("nav", { attrs: { "aria-label": "Page navigation example" } }, [
+    _c("nav", [
       _c("ul", { staticClass: "pagination" }, [
         _c(
           "li",
