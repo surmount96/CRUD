@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 // List Fuel Inventories
-Route::get('fuel','FuelController@index');
+Route::get('fuels','FuelController@index');
 
 //Showing just single fuel inventory
 Route::get('fuel/{id}','FuelController@show');
