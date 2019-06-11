@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\fuel;
+use App\Fuel;
 use App\Http\Resources\Fuel as FuelResource;
 
 class FuelController extends Controller
