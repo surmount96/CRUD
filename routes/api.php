@@ -18,13 +18,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 // List Fuel Inventories
-Route::get('fuels','FuelController@index');
+Route::get('fuel','FuelController@index');
 
 //Showing just single fuel inventory
 Route::get('fuel/{id}','FuelController@show');
 
 // Create new Inventory
-Route::post('fuels','FuelController@store');
+Route::post('fuel','FuelController@store');
 
 // Update Fuel Inventory
 Route::put('fuel','FuelController@store');
