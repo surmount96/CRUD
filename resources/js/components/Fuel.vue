@@ -126,7 +126,7 @@
             addFuel(){
                 if(this.edit === false){
                     //add
-                    fetch('/api/fuel',{
+                    fetch('api/fuel',{
                         method: 'post',
                         body: JSON.stringify(this.fuel),
                         headers:{
