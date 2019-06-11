@@ -1832,7 +1832,7 @@ __webpack_require__.r(__webpack_exports__);
 
       if (this.edit === false) {
         //add
-        fetch('api/fuel', {
+        fetch('api/fuels', {
           method: 'post',
           body: JSON.stringify(this.fuel),
           headers: {
