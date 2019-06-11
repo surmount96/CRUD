@@ -47,7 +47,7 @@ class FuelController extends Controller
      */
     public function show($id)
     {
-        $fuel = fuel::findorfail($id);
+        $fuel = Fuel::findorfail($id);
         return new FuelResource($fuel);
     }
 
@@ -59,7 +59,7 @@ class FuelController extends Controller
      */
     public function destroy($id)
     {
-        $fuel = fuel::findorfail($id);
+        $fuel = Fuel::findorfail($id);
 
         if($fuel->delete()){
             return new FuelResource($fuel);
